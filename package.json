@@ -17,6 +17,15 @@
     "vscode:prepublish": "node ./node_modules/webpack/bin/webpack.js",
     "compile": "node ./node_modules/webpack/bin/webpack.js -w"
   },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/naumovs/vscode-ext-node-module-resolve/issues"
+  },
+  "homepage": "https://github.com/naumovs/vscode-ext-node-module-resolve",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naumovs/vscode-ext-node-module-resolve.git"
+  },
   "main": "./dist/extension",
   "icon": "images/preview.png",
   "contributes": {
