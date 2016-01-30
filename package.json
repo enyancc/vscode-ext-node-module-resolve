@@ -1,0 +1,51 @@
+{
+  "name": "node-modules-resolve",
+  "displayName": "Node modules resolve",
+  "description": "Provides definitions for commonjs requires in your code for quick navigation.",
+  "version": "0.0.1",
+  "publisher": "naumovs",
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript"
+  ],
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/webpack/bin/webpack.js",
+    "compile": "node ./node_modules/webpack/bin/webpack.js -w"
+  },
+  "main": "./dist/extension",
+  "icon": "images/preview.png",
+  "contributes": {
+    "configuration": {
+        "type": "object",
+        "title": "Node modules resolve",
+        "properties": {
+            "javascript.commonjs.resolve.extensions": {
+                "type": "array",
+                "default": [ ".js" ],
+                "description": "Array of file extensions to search in order."
+            },
+            "javascript.commonjs.resolve.package": {
+                "type": "string",
+                "default": "package.json",
+                "description": "package.json Data applicable to the module being loaded"
+            },
+            "javascript.commonjs.resolve.moduleDirectory": {
+                "type": "array",
+                "default": [ "node_modules" ],
+                "description": "Directories in which to recursively look for modules."
+            }
+        }
+    }
+  },
+  "devDependencies": {
+    "json-loader": "^0.5.4",
+    "resolve": "^1.1.7",
+    "vscode": "0.10.x",
+    "webpack": "^1.12.12"
+  }
+}
