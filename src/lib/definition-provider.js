@@ -32,10 +32,14 @@ class DefinitionProvider {
       .then(moduleToFind => {
         if (moduleToFind) {
           return new Promise((resolve) => {
+<<<<<<< HEAD
             const opts = this._options;
             opts.basedir = path.dirname(document.fileName);
 
             resolveModule(moduleToFind, opts, (err, data) => {
+=======
+            resolveModule(moduleToFind, {basedir: path.dirname(document.fileName)}, (err, data) => {
+>>>>>>> bd76d359e7dc6683b2dec4b293814b1fe6a9648d
               if (err) {
                 return null;
               }
