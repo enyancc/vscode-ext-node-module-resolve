@@ -1,13 +1,28 @@
-# README
-## This is the README for your extension "node-module-resolver" 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# [vscode-ext-node-module-resolve](https://github.com/naumovs/vscode-ext-node-module-resolve)
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+Provides definitions for commonjs requires in your code for quick navigation. Works with commonjs modules and import module system.
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Inspired by HookyQR's Node Module Creator and Viewer, this extension provides similar funcitonality with better module resolving system in cost of much less resources needed.
+You should use only one extension at the same time for the better experience.
 
-** Enjoy!**
+## Install
+
+In VSC press Ctrl+Shift+P (Cmd+Shift+P on Mac) then type ">ext install", hit enter, search "Node modules resolve".
+
+Still confused? Click "Get Started" above.
+
+## Usage
+
+You can navigate to the module in 2 ways:
+
+ - Set your cursor inside to the module name string and click F12.
+ - Hold CMD or CTRL key and hover over the module name. It will become underlined if the dependancy is resolved and it will show the popup with the code lens.
+
+## TODO
+
+## Configuration
+You can configure this plugin via the "javascript.commonjs.resolve" properties in your workspace/user preferences.
+
+## Contribution
+
+Feel free to contribute!

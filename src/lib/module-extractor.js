@@ -1,6 +1,6 @@
 'use strict';
 const requireRe = /(require\s*\(\s*)(['"])(.*?[^\\])\2\s*\)/g;
-// const importRe = /(import\s+(?:.*?\s+from\s+)?)(['"])(.*?[^\\])\2/g;
+const importRe = /(import\s+(?:.*?\s+from\s+)?)(['"])(.*?[^\\])\2/g;
 
 module.exports = {
   findAll: findAll
@@ -8,8 +8,8 @@ module.exports = {
 
 function findAll (text) {
   return Promise.all([
-    findAllRegex(requireRe, text)
-    // findAllRegex(importRe, text)
+    findAllRegex(requireRe, text),
+    findAllRegex(importRe, text)
   ]).then(data => {
     let results = [];
 
