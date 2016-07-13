@@ -9,7 +9,7 @@ module.exports = {
 
     context.subscriptions.push(
       vscode.languages.registerDefinitionProvider(
-        'javascript', new DefinitionProvider(config)
+        config.languages, new DefinitionProvider(config)
       )
     );
   },

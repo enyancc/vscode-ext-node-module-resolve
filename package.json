@@ -2,16 +2,19 @@
   "name": "node-modules-resolve",
   "displayName": "Node modules resolve",
   "description": "Provides definitions for commonjs requires in your code for quick navigation.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "naumovs",
   "engines": {
-    "vscode": "^0.10.1"
+    "vscode": "^0.11.x"
   },
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onLanguage:javascript"
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact"
   ],
   "scripts": {
     "vscode:prepublish": "node ./node_modules/webpack/bin/webpack.js",
@@ -33,6 +36,11 @@
         "type": "object",
         "title": "Node modules resolve",
         "properties": {
+          "javascript.commonjs.resolve.languages": {
+                "type": "array",
+                "default": [ "javascript", "javascriptreact", "typescript", "typescriptreact" ],
+                "description": "Array of languages where the script should be enabled."
+            },
             "javascript.commonjs.resolve.extensions": {
                 "type": "array",
                 "default": [ ".js" ],
@@ -54,7 +62,7 @@
   "devDependencies": {
     "json-loader": "^0.5.4",
     "resolve": "^1.1.7",
-    "vscode": "0.10.x",
+    "vscode": "0.11.14",
     "webpack": "^1.12.12"
   }
 }

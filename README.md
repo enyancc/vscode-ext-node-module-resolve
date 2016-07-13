@@ -18,7 +18,13 @@ You can navigate to the module in 2 ways:
  - Set your cursor inside to the module name string and click F12.
  - Hold CMD or CTRL key and hover over the module name. It will become underlined if the dependancy is resolved and it will show the popup with the code lens.
 
-## TODO
+## Changelist
+
+#### 1.0.1
+ - Enable plugin in JavascriptReact, TypeScript and TypeScriptReact
+
+#### 1.0.0
+ - Initial release
 
 ## Configuration
 You can configure this plugin via the "javascript.commonjs.resolve" properties in your workspace/user preferences.
