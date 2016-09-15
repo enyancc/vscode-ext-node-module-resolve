@@ -7,7 +7,7 @@ const vscode = require('vscode');
 class DefinitionProvider {
 
   constructor (options) {
-    this._options = options;
+    this._options = Object.assign({}, options);
   }
 
   provideDefinition (document, position) {

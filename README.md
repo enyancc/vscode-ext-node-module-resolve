@@ -19,6 +19,8 @@ You can navigate to the module in 2 ways:
  - Hold CMD or CTRL key and hover over the module name. It will become underlined if the dependancy is resolved and it will show the popup with the code lens.
 
 ## Changelist
+#### 1.0.2
+ - Fix for new version
 
 #### 1.0.1
  - Enable plugin in JavascriptReact, TypeScript and TypeScriptReact

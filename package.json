@@ -2,7 +2,7 @@
   "name": "node-modules-resolve",
   "displayName": "Node modules resolve",
   "description": "Provides definitions for commonjs requires in your code for quick navigation.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "naumovs",
   "engines": {
     "vscode": "^0.11.x"
@@ -60,9 +60,9 @@
     }
   },
   "devDependencies": {
-    "json-loader": "^0.5.4",
-    "resolve": "^1.1.7",
-    "vscode": "0.11.14",
-    "webpack": "^1.12.12"
+    "json-loader": "0.5.4",
+    "resolve": "1.1.7",
+    "vscode": "0.11.18",
+    "webpack": "1.13.2"
   }
 }
