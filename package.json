@@ -22,12 +22,12 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/naumovs/vscode-ext-node-module-resolve/issues"
+    "url": "https://github.com/sergiirocks/vscode-ext-node-module-resolve/issues"
   },
-  "homepage": "https://github.com/naumovs/vscode-ext-node-module-resolve",
+  "homepage": "https://github.com/sergiirocks/vscode-ext-node-module-resolve",
   "repository": {
     "type": "git",
-    "url": "https://github.com/naumovs/vscode-ext-node-module-resolve.git"
+    "url": "https://github.com/sergiirocks/vscode-ext-node-module-resolve.git"
   },
   "main": "./dist/extension",
   "icon": "images/preview.png",
